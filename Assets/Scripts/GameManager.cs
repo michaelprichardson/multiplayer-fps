@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public static GameManager singleton
+    public static GameManager singleton;
 
     public MatchSettings matchSettings;
 
@@ -16,14 +16,14 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    #region Player tracking 
+    #region Player tracking
 
     private const string PLAYER_ID_PREFIX = "Player ";
 
     private static Dictionary<string, Player> players = new Dictionary<string, Player>();
 
     public static void RegisterPlayer(string _netID, Player _player){
-        string _playerID = PLAYER_ID_PREFIX + _netID; 
+        string _playerID = PLAYER_ID_PREFIX + _netID;
         players.Add(_playerID, _player);
         _player.transform.name = _playerID;
     }
