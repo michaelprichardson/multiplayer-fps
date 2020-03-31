@@ -798,6 +798,7 @@ GameObject:
   - component: {fileID: -5624584609090782201}
   - component: {fileID: -8160350604062650791}
   - component: {fileID: 7920577721882514715}
+  - component: {fileID: 2907712270339542704}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -932,6 +933,7 @@ MonoBehaviour:
   - {fileID: 7024373595903784990}
   - {fileID: 7024373595903784989}
   - {fileID: -5624584609090782201}
+  - {fileID: 7920577721882514715}
   remoteLayerName: RemotePlayer
 --- !u!114 &-8957537461389149124
 MonoBehaviour:
@@ -1125,3 +1127,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2907712270339542704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7024373597560326529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4fc1de7aae047a4bf138b9498c9b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 8673900603913914411}
+  m_ChildIndex: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 1
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.3
+  m_InterpolateMovement: 0
